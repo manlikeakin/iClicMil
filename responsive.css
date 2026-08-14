@@ -1,0 +1,417 @@
+/* =========================================
+   iClicMIL RESPONSIVE DESIGN
+   Phase 3 - Mobile & Tablet
+========================================= */
+
+
+/* =========================================
+   GLOBAL MOBILE FIXES
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   TABLET
+   768px and below
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------
+       HEADER / NAVBAR
+    ----------------------------- */
+
+    .main-header {
+        padding: 14px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+
+    /* -----------------------------
+       MAIN CONTENT
+    ----------------------------- */
+
+    .dashboard,
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    /* -----------------------------
+       WELCOME CARD
+    ----------------------------- */
+
+    .welcome-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .welcome-card h1 {
+        font-size: 28px;
+    }
+
+    .xp-box {
+        align-self: stretch;
+        text-align: center;
+    }
+
+
+    /* -----------------------------
+       DAILY CHALLENGE
+    ----------------------------- */
+
+    .daily-challenge {
+        padding: 22px;
+    }
+
+
+    /* -----------------------------
+       QUICK ACTIONS
+    ----------------------------- */
+
+    .action-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+
+    /* -----------------------------
+       STATISTICS
+    ----------------------------- */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------
+       FEED
+    ----------------------------- */
+
+    .feed-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feed-card {
+        width: 100%;
+    }
+
+
+    /* -----------------------------
+       BADGES
+    ----------------------------- */
+
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------
+       ACTIVITY
+    ----------------------------- */
+
+    .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+
+    /* -----------------------------
+       PROGRESS
+    ----------------------------- */
+
+    .progress-card {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   600px and below
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------
+       HEADER
+    ----------------------------- */
+
+    .main-header {
+        padding: 12px 14px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+
+    /* -----------------------------
+       MAIN CONTENT
+    ----------------------------- */
+
+    .dashboard,
+    main {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    /* -----------------------------
+       HEADINGS
+    ----------------------------- */
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+
+    /* -----------------------------
+       WELCOME
+    ----------------------------- */
+
+    .welcome-card {
+        padding: 20px;
+    }
+
+    .welcome-card h1 {
+        font-size: 24px;
+    }
+
+    .welcome-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------
+       QUICK ACTIONS
+    ----------------------------- */
+
+    .action-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .action-card {
+        padding: 18px 12px;
+        text-align: center;
+    }
+
+
+    /* -----------------------------
+       STATISTICS
+    ----------------------------- */
+
+    .stats-card {
+        padding: 18px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-box {
+        padding: 16px 10px;
+    }
+
+    .stat-box h3 {
+        font-size: 22px;
+    }
+
+    .stat-box p {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------
+       DAILY CHALLENGE
+    ----------------------------- */
+
+    .daily-challenge {
+        padding: 20px;
+    }
+
+    .daily-challenge .btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------
+       FEED
+    ----------------------------- */
+
+    .feed-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .feed-header a {
+        font-size: 13px;
+    }
+
+    .feed-card {
+        padding: 18px;
+    }
+
+    .feed-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .read-btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------
+       PROGRESS
+    ----------------------------- */
+
+    .progress-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .progress-card p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------
+       BADGES
+    ----------------------------- */
+
+    .badges-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .badge-card {
+        padding: 20px;
+    }
+
+
+    /* -----------------------------
+       ACTIVITY
+    ----------------------------- */
+
+    .activity-card {
+        padding: 16px;
+    }
+
+    .activity-item {
+        padding: 14px 0;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   400px and below
+========================================= */
+
+@media (max-width: 400px) {
+
+    .main-header {
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .dashboard,
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .welcome-card {
+        padding: 16px;
+    }
+
+    .welcome-card h1 {
+        font-size: 21px;
+    }
+
+    .action-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .daily-challenge {
+        padding: 17px;
+    }
+
+}

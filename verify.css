@@ -1,0 +1,350 @@
+/* ===================================
+   VERIFY PAGE
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Header */
+
+.verify-container{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.verify-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.verify-card h1{
+    font-size:2.3rem;
+    color:#5B4DFF;
+    margin-bottom:15px;
+}
+
+.verify-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* =====================
+    VERIFY OPTIONS
+===================== */
+
+.verify-options{
+
+    display:flex;
+    gap:15px;
+    margin:35px 0;
+    flex-wrap:wrap;
+
+}
+
+.option{
+
+    border:none;
+    padding:15px 20px;
+    border-radius:12px;
+    background:#eef2ff;
+    color:#5B4DFF;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+
+}
+
+.option:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.option.active{
+
+    background:#5B4DFF;
+    color:white;
+
+}
+
+.option.disabled{
+
+    cursor:not-allowed;
+    opacity:.8;
+
+}
+
+.option span{
+
+    display:block;
+    font-size:.7rem;
+    margin-top:6px;
+
+}
+
+/* =====================
+    SEARCH
+===================== */
+
+.verify-search{
+
+    display:flex;
+    gap:15px;
+    margin-bottom:40px;
+
+}
+
+.verify-search input{
+
+    flex:1;
+    padding:16px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:1rem;
+    transition:.3s;
+
+}
+
+.verify-search input:focus{
+
+    border-color:#5B4DFF;
+    box-shadow:0 0 0 4px rgba(91,77,255,.15);
+
+}
+
+.verify-search button{
+
+    padding:16px 30px;
+    border:none;
+    background:#5B4DFF;
+    color:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.verify-search button:hover{
+
+    background:#4638e6;
+
+}
+
+/* =====================
+    RESULT
+===================== */
+
+.result-card{
+
+    margin-top:20px;
+    background:#f8fafc;
+    border-left:6px solid #5B4DFF;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+
+}
+
+.result-card h2{
+
+    margin-bottom:15px;
+    color:#5B4DFF;
+
+}
+
+.result-card p{
+
+    margin-bottom:12px;
+
+}
+
+.result-card strong{
+
+    color:#111;
+
+}
+
+/* Verdict Colours */
+
+.result-card.verified{
+
+    border-left-color:#00C896;
+
+}
+
+.result-card.false{
+
+    border-left-color:#ef4444;
+
+}
+
+.result-card.misleading{
+
+    border-left-color:#f59e0b;
+
+}
+
+.result-card.nomatch{
+
+    border-left-color:#9ca3af;
+
+}
+
+/* =====================
+    TIPS
+===================== */
+
+.tips{
+
+    margin-top:45px;
+    background:#eef2ff;
+    border-radius:16px;
+    padding:25px;
+
+}
+
+.tips h3{
+
+    color:#5B4DFF;
+    margin-bottom:15px;
+
+}
+
+.tips ul{
+
+    padding-left:20px;
+
+}
+
+.tips li{
+
+    margin-bottom:10px;
+    color:#555;
+    line-height:1.6;
+
+}
+
+/* =====================
+    SOURCES
+===================== */
+
+.sources{
+
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+
+}
+
+.source{
+
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:30px;
+    padding:10px 16px;
+    font-size:.9rem;
+    font-weight:600;
+
+}
+
+/* =====================
+    RESPONSIVE
+===================== */
+
+@media(max-width:768px){
+
+.verify-card{
+
+    padding:25px;
+
+}
+
+.verify-card h1{
+
+    font-size:1.9rem;
+
+}
+
+.verify-search{
+
+    flex-direction:column;
+
+}
+
+.verify-search button{
+
+    width:100%;
+
+}
+
+.verify-options{
+
+    flex-direction:column;
+
+}
+
+.option{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.verify-card h1{
+
+    font-size:1.6rem;
+
+}
+
+.verify-card{
+
+    padding:20px;
+
+}
+
+}
+
+
+
+
+
+
+.clear-btn{
+
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:16px 28px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.clear-btn:hover{
+
+    background:#dc2626;
+
+}
+
+

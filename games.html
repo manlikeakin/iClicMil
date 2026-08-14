@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>iClicMIL | Truth Detective</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="games.css">
+<link rel="stylesheet" href="components.css">
+</head>
+
+<body>
+<header class="main-header">
+
+    <div class="logo">
+
+        🌍 iClicMIL
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="verify.html">Verify</a>
+
+        <a href="feed.html">Feed</a>
+
+        <a href="graphics.html">Graphics</a>
+
+        <a href="games.html">Games</a>
+
+    </nav>
+
+</header>
+
+
+<section class="game-hero">
+
+<h1>
+
+🕵️ Truth Detective
+
+</h1>
+
+<p>
+
+Train your Media & Information Literacy skills through fun missions.
+
+</p>
+
+</section>
+
+<section class="mission-card">
+
+<div class="mission-badge">
+
+MISSION 001
+
+</div>
+
+<h2>
+
+Can You Spot Misinformation?
+
+</h2>
+
+<p>
+
+You'll answer five questions based on real-world digital literacy situations.
+
+</p>
+
+<div class="mission-info">
+
+<div>
+
+🎯 Difficulty
+
+<strong>Beginner</strong>
+
+</div>
+
+<div>
+
+🏆 Reward
+
+<strong>100 Truth Points</strong>
+
+</div>
+
+</div>
+
+<button id="startGameBtn" class="start-btn">
+
+🚀 Start Mission
+
+</button>
+
+</section>
+
+<section id="quizSection" class="quiz-section">
+
+<div class="quiz-header">
+
+<div id="progressText">
+
+Question 1 of 5
+
+</div>
+
+<div id="scoreText">
+
+Score: 0
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div id="progressFill">
+
+</div>
+
+</div>
+
+<div class="question-card">
+
+<h2 id="question">
+
+Question goes here
+
+</h2>
+
+<div id="answers" class="answers">
+
+</div>
+<div id="feedbackCard" class="feedback-card">
+
+    <h3 id="feedbackTitle"></h3>
+
+    <p id="feedbackExplanation"></p>
+
+    <button id="nextBtn" class="start-btn">
+
+        Next Question →
+
+    </button>
+
+</div>
+
+
+</div>
+
+</section>
+
+<script src="games.js"></script>
+<script src="storage.js"></script>
+
+</body>
+
+</html>
+

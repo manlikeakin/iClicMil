@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iClicMIL | Content-to-Graphic Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="graphics.css">
+    <link rel="stylesheet" href="components.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+   <header class="main-header">
+
+    <div class="logo">
+
+        🌍 iClicMIL
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="verify.html">Verify</a>
+
+        <a href="feed.html">Feed</a>
+
+        <a href="graphics.html">Graphics</a>
+
+        <a href="games.html">Games</a>
+
+    </nav>
+
+</header>
+
+
+    <!-- Hero -->
+
+    <section class="graphics-hero">
+
+        <h1>🎨 Content-to-Graphic Generator</h1>
+
+        <p>
+            Turn Media & Information Literacy ideas, fact-checks and quotes into
+            beautiful social media graphics that can be shared instantly.
+        </p>
+
+    </section>
+
+    <!-- Main Layout -->
+
+    <section class="graphics-container">
+
+        <!-- Controls -->
+
+        <div class="graphics-form">
+
+            <h2>Create Your Graphic</h2>
+
+            <label>Title</label>
+
+            <input
+                type="text"
+                id="graphicTitle"
+                placeholder="e.g. Fact Check">
+
+            <label>Message</label>
+
+            <textarea
+                id="graphicText"
+                rows="7"
+                placeholder="Type or paste your quote, fact-check or MIL lesson here..."></textarea>
+
+                <label>Category</label>
+
+<select id="categorySelect">
+
+    <option value="FACT CHECK">✔ Fact Check</option>
+
+    <option value="AI">🤖 AI</option>
+
+    <option value="MEDIA LITERACY">📚 Media Literacy</option>
+
+    <option value="DIGITAL SAFETY">🛡 Digital Safety</option>
+
+</select>
+
+
+            <label>Choose Theme</label>
+
+            <select id="themeSelect">
+
+                <option value="purple">💜 Purple</option>
+
+                <option value="green">💚 Green</option>
+
+                <option value="dark">🌙 Dark</option>
+
+            </select>
+
+            <button id="generateBtn" class="generate-btn">
+
+                ✨ Generate Graphic
+
+            </button>
+
+            <button id="downloadBtn" class="download-btn">
+
+    📥 Download Graphic
+
+</button>
+
+
+        </div>
+
+        <!-- Preview -->
+
+       
+<div id="graphicPreview" class="graphic-card purple">
+
+    <div class="card-header">
+
+        <div class="brand">
+
+            🌍 iClicMIL
+
+        </div>
+
+        <span id="categoryBadge" class="category-badge">
+
+            FACT CHECK
+
+        </span>
+
+    </div>
+
+    <div class="card-body">
+
+        <h3 id="previewTitle">
+
+            Your Title
+
+        </h3>
+
+        <p id="previewText">
+
+            Your message will appear here...
+
+        </p>
+
+    </div>
+
+    <div class="card-footer">
+
+        <div id="currentDate">
+
+            July 2026
+
+        </div>
+
+        <div>
+
+            #ThinkBeforeYouShare
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+    <script src="graphics.js"></script>
+    <script src="storage.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,466 @@
+/* =========================================
+   iClicMIL - Feed Page
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* =========================================
+   Feed Container
+========================================= */
+
+.feed-container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.feed-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.feed-header h1{
+    color:#5B4DFF;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.feed-header p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#666;
+}
+
+/* =========================================
+   Search
+========================================= */
+
+.feed-search{
+    margin-bottom:30px;
+}
+
+.feed-search input{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    font-size:1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    outline:none;
+}
+
+.feed-search input:focus{
+    border:2px solid #5B4DFF;
+}
+
+/* =========================================
+   Filters
+========================================= */
+
+.feed-filters{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.filter-btn{
+    background:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.filter-btn:hover{
+    transform:translateY(-3px);
+}
+
+.filter-btn.active{
+    background:#5B4DFF;
+    color:white;
+}
+
+/* =========================================
+   Feed Grid
+========================================= */
+
+.feed-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* =========================================
+   Article Card
+========================================= */
+
+.feed-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feed-card:hover{
+    transform:translateY(-8px);
+}
+
+.feed-image{
+    height:180px;
+    background:linear-gradient(135deg,#5B4DFF,#00C896);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:4rem;
+}
+
+.feed-content{
+    padding:25px;
+}
+
+.category{
+
+    display:inline-block;
+    background:#eef2ff;
+    color:#5B4DFF;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:600;
+    margin-bottom:15px;
+
+}
+
+.feed-content h3{
+
+    margin-bottom:15px;
+    line-height:1.4;
+
+}
+
+.feed-content p{
+
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+
+}
+
+/* =========================================
+   Buttons
+========================================= */
+
+.feed-buttons{
+
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+
+}
+
+.feed-buttons a{
+
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+
+}
+.summary-btn{
+
+    background: linear-gradient(135deg,#5B4DFF,#7C6CFF);
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    box-shadow:0 8px 20px rgba(91,77,255,.25);
+
+}
+
+
+.summary-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(91,77,255,.35);
+
+}
+.summary-btn:active{
+
+    transform:scale(.97);
+
+}
+
+.source-btn{
+
+    background:#eef2ff;
+    color:#5B4DFF;
+
+}
+
+.source-btn:hover{
+
+    background:#dfe5ff;
+
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media(max-width:768px){
+
+.feed-header h1{
+
+    font-size:2rem;
+
+}
+
+.feed-buttons{
+
+    flex-direction:column;
+
+}
+
+.feed-buttons a{
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.feed-container{
+
+    width:94%;
+
+}
+
+.feed-header h1{
+
+    font-size:1.7rem;
+
+}
+
+.feed-search input{
+
+    padding:15px;
+
+}
+
+}
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.modal-content{
+
+    width:90%;
+
+    max-width:700px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    position:relative;
+
+    animation:popup .35s ease;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:translateY(-40px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    right:25px;
+
+    top:18px;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+.close-modal:hover{
+
+    color:#ef4444;
+
+}
+
+.modal-content h2{
+
+    color:#5B4DFF;
+
+    margin-bottom:20px;
+
+}
+
+.modal-content p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.modal-footer{
+
+    margin-top:30px;
+
+}
+
+
+
+.lesson-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-left:5px solid #5B4DFF;
+
+    background:#f8f9ff;
+
+    border-radius:12px;
+
+}
+
+.lesson-box h3{
+
+    margin-bottom:10px;
+
+    color:#5B4DFF;
+
+}
+
+.modal-footer{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.graphic-btn{
+
+    background:#ff9800;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    flex:1;
+
+}
+
+.graphic-btn:hover{
+
+    background:#f57c00;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+

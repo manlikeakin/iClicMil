@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | iClicMIL</title>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+<header class="main-header">
+
+    <div class="logo">
+
+        🌍 iClicMIL
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="verify.html">Verify</a>
+
+        <a href="feed.html">Feed</a>
+
+        <a href="graphics.html">Graphics</a>
+
+        <a href="games.html">Games</a>
+
+    </nav>
+
+</header>
+
+
+
+
+<main class="dashboard">
+
+    <!-- Welcome Card -->
+
+    <section class="welcome-card">
+
+        <div>
+
+            <h1>
+
+                Level 1 · Beginner
+
+            </h1>
+
+            <p>
+
+                Keep learning to unlock more badges and exciting challenges.
+
+            </p>
+
+        </div>
+
+        <div class="xp-box">
+
+            ⭐ 120 XP
+
+        </div>
+
+    </section>
+
+    <section class="stats-card">
+
+    <h2>📊 Your Learning Journey</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat-box">
+
+            <h3 id="articlesCount">0</h3>
+
+            <p>Articles Read</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3 id="claimsCount">0</h3>
+
+            <p>Claims Verified</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3 id="graphicsCount">0</h3>
+
+            <p>Graphics Created</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3 id="gamesCount">0</h3>
+
+            <p>Games Completed</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3 id="truthPoints">0</h3>
+
+            <p>Truth Points</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h3 id="rankText">
+
+                Explorer
+
+            </h3>
+
+            <p>Current Rank</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- Daily Challenge -->
+
+    <section class="daily-challenge">
+
+        <h2>🔥 Daily Challenge</h2>
+
+        <p>
+
+            Can you identify today's fake headline?
+
+        </p>
+
+        <button class="btn">
+
+            Play Now
+
+        </button>
+
+    </section>
+
+
+    <!-- Quick Actions -->
+
+    <section class="quick-actions">
+
+        <h2>Quick Actions</h2>
+
+        <div class="action-grid">
+
+            <div class="action-card">
+
+                🔍
+
+                <h3>Verify</h3>
+
+            </div>
+
+            <div class="action-card">
+
+                🎮
+
+                <h3>Games</h3>
+
+            </div>
+
+            <div class="action-card">
+
+                📰
+
+                <h3>News Feed</h3>
+
+            </div>
+
+            <div class="action-card">
+
+                🎨
+
+                <h3>Graphics</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+        LATEST FEED
+=========================== -->
+
+<section class="latest-feed">
+
+    <div class="feed-header">
+
+        <h2>📰 Latest MIL Updates</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="feed-grid">
+
+        <article class="feed-card">
+
+            <span class="feed-tag">UNESCO</span>
+
+            <h3>
+
+                New AI Literacy Toolkit Released
+
+            </h3>
+
+            <p>
+
+                Discover practical resources designed to help
+                young people understand AI responsibly.
+
+            </p>
+
+            <button class="read-btn">
+
+                Read More →
+
+            </button>
+
+        </article>
+
+
+        <article class="feed-card">
+
+            <span class="feed-tag">
+
+                Africa Check
+
+            </span>
+
+            <h3>
+
+                Spotting Election Misinformation
+
+            </h3>
+
+            <p>
+
+                Learn simple techniques for identifying
+                misleading election-related content online.
+
+            </p>
+
+            <button class="read-btn">
+
+                Read More →
+
+            </button>
+
+        </article>
+
+
+        <article class="feed-card">
+
+            <span class="feed-tag">
+
+                Dubawa
+
+            </span>
+
+            <h3>
+
+                Deepfake Videos Explained
+
+            </h3>
+
+            <p>
+
+                Understand how AI-generated videos are created
+                and how to identify warning signs.
+
+            </p>
+
+            <button class="read-btn">
+
+                Read More →
+
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+        PROGRESS
+=========================== -->
+
+<section class="progress-section">
+
+    <div class="progress-card">
+
+        <div class="progress-header">
+
+            <h2>🏆 Your Progress</h2>
+
+            <span>Level 1</span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <p>
+
+            <strong>120 XP</strong> earned • 80 XP to reach Level 2
+
+        </p>
+
+    </div>
+
+
+<!-- ===========================
+        BADGES
+=========================== -->
+
+<section class="badges-section">
+
+    <div class="section-title">
+
+        <h2>Your Badges</h2>
+
+        <p>
+
+            Earn badges as you complete challenges and develop your
+            Media & Information Literacy skills.
+
+        </p>
+
+    </div>
+
+    <div class="badges-grid">
+
+        <div class="badge-card earned">
+
+            🛡️
+
+            <h3>Truth Seeker</h3>
+
+            <p>
+
+                Completed your first verification challenge.
+
+            </p>
+
+        </div>
+
+        <div class="badge-card earned">
+
+            📰
+
+            <h3>News Detective</h3>
+
+            <p>
+
+                Read 10 verified articles.
+
+            </p>
+
+        </div>
+
+        <div class="badge-card locked">
+
+            🤖
+
+            <h3>AI Spotter</h3>
+
+            <p>
+
+                Complete 5 AI misinformation quizzes.
+
+            </p>
+
+        </div>
+
+        <div class="badge-card locked">
+
+            🌍
+
+            <h3>MIL Champion</h3>
+
+            <p>
+
+                Reach Level 5.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        RECENT ACTIVITY
+=========================== -->
+
+<section class="activity-section">
+
+    <div class="section-title">
+
+        <h2>Recent Activity</h2>
+
+    </div>
+
+    <div class="activity-card">
+
+        <div class="activity-item">
+
+            ✅ Completed "Spot the Fake Headline"
+
+            <span>+20 XP</span>
+
+        </div>
+
+        <div class="activity-item">
+
+            📰 Read "AI Literacy Toolkit"
+
+            <span>+10 XP</span>
+
+        </div>
+
+        <div class="activity-item">
+
+            🎮 Finished Daily Challenge
+
+            <span>+30 XP</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+</main>
+<script src="storage.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iClicMIL | MIL Feed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="components.css">
+
+</head>
+
+<body>
+
+    <!-- ===============================
+            HEADER
+    ================================ -->
+
+   <header class="main-header">
+
+    <div class="logo">
+
+        🌍 iClicMIL
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="verify.html">Verify</a>
+
+        <a href="feed.html">Feed</a>
+
+        <a href="graphics.html">Graphics</a>
+
+        <a href="games.html">Games</a>
+
+    </nav>
+
+</header>
+
+
+    <!-- ===============================
+            FEED
+    ================================ -->
+
+    <section class="feed-container">
+
+        <div class="feed-header">
+
+            <h1>📰 MIL Feed</h1>
+
+            <p>
+
+                Stay informed with curated Media & Information Literacy stories,
+                AI updates and trusted fact-check resources.
+
+            </p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="feed-search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search articles...">
+
+        </div>
+
+        <!-- Filters -->
+
+        <div class="feed-filters">
+
+            <button class="filter-btn active" data-category="All">
+
+                All
+
+            </button>
+
+            <button class="filter-btn" data-category="AI">
+
+                AI
+
+            </button>
+
+            <button class="filter-btn" data-category="Fact Check">
+
+                Fact Check
+
+            </button>
+
+            <button class="filter-btn" data-category="MIL">
+
+                MIL
+
+            </button>
+
+        </div>
+
+        <!-- Feed Grid -->
+
+        <div
+            id="feedGrid"
+            class="feed-grid">
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+            MODAL
+    ================================ -->
+
+    <div id="articleModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-modal">
+
+                &times;
+
+            </span>
+
+            <h2 id="modalTitle">
+
+            </h2>
+
+            <p id="modalSummary">
+
+            </p>
+
+            <div class="lesson-box">
+
+                <h3>
+
+                    💡 Why This Matters
+
+                </h3>
+
+                <p id="modalWhy">
+
+                </p>
+
+            </div>
+
+            <div class="lesson-box">
+
+                <h3>
+
+                    🧠 Key MIL Lesson
+
+                </h3>
+
+                <p id="modalLesson">
+
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    id="markReadBtn"
+                    class="summary-btn">
+
+                    ✓ Mark as Read
+
+                </button>
+
+                <a
+                    id="modalSource"
+                    target="_blank"
+                    class="source-btn">
+
+                    Visit Original Source
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="feed.js"></script>
+    <script src="storage.js"></script>
+
+</body>
+
+</html>
+

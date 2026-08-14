@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify a Claim | iClicMIL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="verify.css">
+    <link rel="stylesheet" href="components.css">
+
+</head>
+
+<body>
+<header class="main-header">
+
+    <div class="logo">
+
+        🌍 iClicMIL
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="verify.html">Verify</a>
+
+        <a href="feed.html">Feed</a>
+
+        <a href="graphics.html">Graphics</a>
+
+        <a href="games.html">Games</a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="verify-container">
+
+    <div class="verify-card">
+
+        <h1>🔍 Verify a Claim</h1>
+
+        <p>
+
+            Check whether a claim matches our demo verification database.
+
+        </p>
+
+        <!-- Verification Options -->
+
+        <div class="verify-options">
+
+            <button class="option active">
+
+                ✍ Type Claim
+
+            </button>
+
+            <button class="option disabled">
+
+                📷 Upload Image
+
+                <span>Coming Soon</span>
+
+            </button>
+
+            <button class="option disabled">
+
+                🔗 Paste URL
+
+                <span>Coming Soon</span>
+
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="verify-search">
+
+            <input
+
+                id="claimInput"
+
+                type="text"
+
+                placeholder="Example: AI images are always fake">
+
+            <button id="verifyBtn">
+
+                Verify
+
+            </button>
+            <button id="clearBtn" class="clear-btn">
+Clear
+            </button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div id="resultCard" class="result-card">
+
+            <h2>
+
+                👋 Ready to verify?
+
+            </h2>
+
+            <p>
+
+                Enter a claim above and click Verify.
+
+            </p>
+
+        </div>
+
+        <!-- Tips -->
+
+        <div class="tips">
+
+            <h3>💡 Verification Tips</h3>
+
+            <ul>
+
+                <li>Check the original source.</li>
+
+                <li>Read beyond the headline.</li>
+
+                <li>Look for the publication date.</li>
+
+                <li>Compare with trusted organisations.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="verify.js"></script>
+<script src="storage.js"></script>
+
+</body>
+
+</html>
+
