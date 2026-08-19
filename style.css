@@ -1088,3 +1088,41 @@ footer{
 }
 
 }
+
+
+
+/* ======================
+   DARK MODE TOGGLE
+====================== */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dark-mode-toggle {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #eef2ff;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: rotate(20deg) scale(1.08);
+    background: #e0e7ff;
+}
+
