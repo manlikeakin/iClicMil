@@ -256,6 +256,72 @@ header{
 
     box-shadow:0 20px 40px rgba(91,77,255,.25);
 
+   /* 3D effect */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    /* Continuous animation */
+    animation: globeMotion 8s ease-in-out infinite;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* ======================
+   GLOBE MOTION
+====================== */
+
+@keyframes globeMotion {
+
+    0% {
+        transform:
+            rotateX(0deg)
+            rotateY(0deg)
+            rotateZ(0deg)
+            translateY(0);
+    }
+
+    20% {
+        transform:
+            rotateX(15deg)
+            rotateY(25deg)
+            rotateZ(5deg)
+            translateY(-10px);
+    }
+
+    40% {
+        transform:
+            rotateX(-20deg)
+            rotateY(80deg)
+            rotateZ(-5deg)
+            translateY(5px);
+    }
+
+    60% {
+        transform:
+            rotateX(20deg)
+            rotateY(160deg)
+            rotateZ(8deg)
+            translateY(-12px);
+    }
+
+    80% {
+        transform:
+            rotateX(-15deg)
+            rotateY(260deg)
+            rotateZ(-6deg)
+            translateY(5px);
+    }
+
+    100% {
+        transform:
+            rotateX(0deg)
+            rotateY(360deg)
+            rotateZ(0deg)
+            translateY(0);
+    }
+
+
 }
 
 /* ======================
