@@ -1,0 +1,168 @@
+
+
+/* =========================
+   iClicMIL DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+body.dark-mode header {
+    background: #111827;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .nav-links a {
+    color: #d1d5db;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #8b7cff;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+body.dark-mode .hero p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .badge {
+    background: #27234f;
+    color: #a99eff;
+}
+
+
+/* =========================
+   SECTION TEXT
+========================= */
+
+body.dark-mode .section-title p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+body.dark-mode .feature-card {
+    background: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .feature-card h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .feature-card p {
+    color: #94a3b8;
+}
+
+body.dark-mode .icon {
+    background: #29345c;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+body.dark-mode .about-content p {
+    color: #94a3b8;
+}
+
+body.dark-mode .about-content li {
+    color: #e5e7eb;
+}
+
+body.dark-mode .about-tag {
+    background: #12352f;
+    color: #34d399;
+}
+
+
+/* =========================
+   IMPACT CARDS
+========================= */
+
+body.dark-mode .impact-card {
+    background: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .impact-card p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+body.dark-mode .step-card {
+    background: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .step-card p {
+    color: #94a3b8;
+}
+
+body.dark-mode .step-card h3 {
+    color: #f8fafc;
+}
+
+
+/* =========================
+   TRUSTED SOURCES
+========================= */
+
+body.dark-mode .trusted-card {
+    background: #1e293b;
+    color: #e5e7eb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+body.dark-mode footer {
+    background: #020617;
+}
+
+
+/* =========================
+   TRANSITION
+========================= */
+
+body,
+header,
+.feature-card,
+.impact-card,
+.step-card,
+.trusted-card,
+.dark-mode-toggle {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
